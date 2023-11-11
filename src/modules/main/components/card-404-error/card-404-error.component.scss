@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+.card-404-component {
+  margin-top: 30px;
+
+  .main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .image-wrapper {
+      flex: 1;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .text-wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      h2 {
+        width: 80%;
+        font-size: 3.75rem;
+        letter-spacing: 0.5px;
+        font-weight: normal;
+      }
+
+      p {
+        width: 50%;
+        padding: 5px;
+      }
+
+      .link {
+        cursor: pointer;
+        width: auto;
+        padding: 15px;
+        border: 1px solid #333;
+        border-radius: 3px;
+        color: white;
+        background-color: #333;
+        text-transform: uppercase;
+        margin-top: 15px;
+        text-decoration: none;
+      }
+    }
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
+  }
+}

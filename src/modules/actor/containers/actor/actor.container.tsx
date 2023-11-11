@@ -97,7 +97,7 @@ const ActorContainer = (props: ActorContainerProps) => {
                     ) : (
                         <div className="actor-details-wrapper">
                             {
-                                !actorListResponse ? (
+                                !actorListResponse?.results?.length ? (
                                     <span>
                                         No Data found!
                                     </span>
